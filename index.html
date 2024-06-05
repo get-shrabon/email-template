@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proper Way Email-Template</title>
+    <script
+      src="https://kit.fontawesome.com/337002c4cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      * {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        background-color: #cccccc;
+        font-family: sans-serif;
+      }
+      p {
+        font-family: "Roboto";
+      }
+      table {
+        border-spacing: 0;
+        width: 100%;
+      }
+      #container__wrapper {
+        width: 100%;
+        max-width: 600px;
+        background-color: white;
+        margin: 0 auto 60px auto;
+        overflow-x: hidden;
+      }
+      .two__columns i {
+        font-size: 20px;
+        color: black;
+      }
+      .p__btn {
+        cursor: pointer;
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border: 0;
+        outline: 0;
+        background: #ed212d;
+        color: white;
+        font-size: 16px;
+        transition: 0.3s all;
+        margin: auto;
+      }
+      .p__btn:hover {
+        transform: scale(0.9);
+      }
+      /* @media screen and (max-width: 576px) {
+        .products {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr) !important;
+          width: 70%;
+          margin: auto;
+        }
+      } */
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+  </head>
+  <body>
+    <table id="container__wrapper">
+      <!-- ============== Top Border ============== -->
+      <tr>
+        <td height="7px" width="100%" style="background-color: #77aabb"></td>
+      </tr>
+      <!-- ============== Header Here ============== -->
+      <tr>
+        <td>
+          <table width="100%">
+            <tr>
+              <td
+                class="two__columns"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 0 20px;
+                "
+              >
+                <table width="100%">
+                  <tr>
+                    <td>
+                      <a href="#"
+                        ><img width="120" src="https://i.ibb.co/dGMgnKQ/logo.jpg" alt="Logo"
+                      /></a>
+                    </td>
+                  </tr>
+                </table>
+                <table width="100%">
+                  <tr>
+                    <td
+                      style="
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        justify-content: end;
+                      "
+                    >
+                      <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+                      <a href="#"><i class="fa-brands fa-youtube"></i> </a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+                      <a href="#"><i class="fa-brands fa-tiktok"></i> </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- ============== Banner Here ============== -->
+      <tr>
+        <td>
+          <table
+            width="100%"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.7),
+                  rgba(0, 0, 0, 0.7)
+                ),
+                url('https://i.ibb.co/qnrLfr3/bannerBG.jpg');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              padding: 70px 0;
+              color: white;
+              text-align: center;
+            "
+          >
+            <tr>
+              <td>
+                <table style="width: 70%; margin: auto">
+                  <tr>
+                    <td>
+                      <h1
+                        style="
+                          font-size: 50px;
+                          font-family: cursive;
+                          font-weight: bold;
+                        "
+                      >
+                        Welcome to our Pepsi Shop
+                      </h1>
+                      <p style="margin: 20px 0; opacity: 0.8">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Asperiores repellendus necessitatibus earum dolore
+                        quasi ipsam?
+                      </p>
+                      <button class="p__btn">
+                        Shop <i class="fa-solid fa-shop"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- ============== About Here ============== -->
+      <tr>
+        <td>
+          <table width="100%" style="padding: 80px 20px">
+            <tr>
+              <td
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 20px;
+                "
+              >
+                <table>
+                  <tr>
+                    <td>
+                      <img
+                        width="100%"
+                        height="300"
+                        style="object-fit: cover"
+                        src="https://i.ibb.co/gy3NJ8W/about.webp"
+                        alt=""
+                      />
+                    </td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <td>
+                      <h2>About Us</h2>
+                      <p style="padding: 10px 0">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Id eveniet sit reiciendis sapiente voluptate
+                        expedita sequi recusandae doloremque magnam vel!
+                      </p>
+                      <p style="margin-bottom: 20px">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Laudantium, ab.voluptate expedita sequi recusandae
+                        doloremque magnam vel
+                      </p>
+                      <button
+                        class="p__btn"
+                        style="
+                          margin: unset;
+                          font-size: 15px;
+                          padding: 10px 20px;
+                        "
+                      >
+                        Learn More
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- ============== Products Here ============== -->
+      <tr>
+        <td>
+          <table
+            width="100%"
+            style="background-color: #77aabb; padding: 80px 20px"
+          >
+            <tr>
+              <td>
+                <table>
+                  <tr>
+                    <td>
+                      <h2
+                        style="
+                          text-align: center;
+                          font-family: cursive;
+                          text-decoration: underline;
+                          text-underline-offset: 10px;
+                        "
+                      >
+                        Shop by Category
+                      </h2>
+                      <!-- ================== Product Card ================== -->
+                      <table>
+                        <tr>
+                          <td
+                            class="products"
+                            style="
+                              display: grid;
+                              grid-template-columns: repeat(2, 1fr);
+                              gap: 20px;
+                              margin-top: 50px;
+                            "
+                          >
+                            <div
+                              style="
+                                width: 100%;
+                                padding: 15px;
+                                background-color: white;
+                                border-radius: 10px;
+                                box-shadow: 1px 1px 10px 1px #cccccc;
+                              "
+                            >
+                              <img
+                                width="100%"
+                                height="200px"
+                                style="object-fit: cover; margin-bottom: 10px"
+                                src="https://i.ibb.co/pLtxXfk/card1.png"
+                                alt=""
+                              />
+                              <div
+                                style="
+                                  display: flex;
+                                  justify-content: space-between;
+                                  align-items: center;
+                                  margin-bottom: 25px;
+                                "
+                              >
+                                <ul style="display: flex">
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star-half-stroke"
+                                    ></i>
+                                  </li>
+                                </ul>
+                                <p style="font-weight: 600">
+                                  <span
+                                    style="
+                                      text-decoration: line-through;
+                                      margin-right: 8px;
+                                      font-weight: 400;
+                                    "
+                                    >$30</span
+                                  >
+                                  <span>$28</span>
+                                </p>
+                              </div>
+                              <button
+                                class="p__btn"
+                                style="font-size: 14px; padding: 8px 15px"
+                              >
+                                Add to Cart
+                              </button>
+                            </div>
+                            <div
+                              style="
+                                width: 100%;
+                                padding: 15px;
+                                background-color: white;
+                                border-radius: 10px;
+                                box-shadow: 1px 1px 10px 1px #cccccc;
+                              "
+                            >
+                              <img
+                                width="100%"
+                                height="200px"
+                                style="object-fit: cover; margin-bottom: 10px"
+                                src="https://i.ibb.co/kS1jzqS/card2.png"
+                                alt=""
+                              />
+                              <div
+                                style="
+                                  display: flex;
+                                  justify-content: space-between;
+                                  align-items: center;
+                                  margin-bottom: 25px;
+                                "
+                              >
+                                <ul style="display: flex">
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star-half-stroke"
+                                    ></i>
+                                  </li>
+                                </ul>
+                                <p style="font-weight: 600">
+                                  <span
+                                    style="
+                                      text-decoration: line-through;
+                                      margin-right: 8px;
+                                      font-weight: 400;
+                                    "
+                                    >$30</span
+                                  >
+                                  <span>$28</span>
+                                </p>
+                              </div>
+                              <button
+                                class="p__btn"
+                                style="font-size: 14px; padding: 8px 15px"
+                              >
+                                Add to Cart
+                              </button>
+                            </div>
+                            <div
+                              style="
+                                width: 100%;
+                                padding: 15px;
+                                background-color: white;
+                                border-radius: 10px;
+                                box-shadow: 1px 1px 10px 1px #cccccc;
+                              "
+                            >
+                              <img
+                                width="100%"
+                                height="200px"
+                                style="object-fit: cover; margin-bottom: 10px"
+                                src="https://i.ibb.co/7CTVt4w/card3.jpg"
+                                alt=""
+                              />
+                              <div
+                                style="
+                                  display: flex;
+                                  justify-content: space-between;
+                                  align-items: center;
+                                  margin-bottom: 25px;
+                                "
+                              >
+                                <ul style="display: flex">
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star-half-stroke"
+                                    ></i>
+                                  </li>
+                                </ul>
+                                <p style="font-weight: 600">
+                                  <span
+                                    style="
+                                      text-decoration: line-through;
+                                      margin-right: 8px;
+                                      font-weight: 400;
+                                    "
+                                    >$30</span
+                                  >
+                                  <span>$28</span>
+                                </p>
+                              </div>
+                              <button
+                                class="p__btn"
+                                style="font-size: 14px; padding: 8px 15px"
+                              >
+                                Add to Cart
+                              </button>
+                            </div>
+                            <div
+                              style="
+                                width: 100%;
+                                padding: 15px;
+                                background-color: white;
+                                border-radius: 10px;
+                                box-shadow: 1px 1px 10px 1px #cccccc;
+                              "
+                            >
+                              <img
+                                width="100%"
+                                height="200px"
+                                style="object-fit: cover; margin-bottom: 10px"
+                                src="https://i.ibb.co/QDhnV9Y/card4.jpg"
+                                alt=""
+                              />
+                              <div
+                                style="
+                                  display: flex;
+                                  justify-content: space-between;
+                                  align-items: center;
+                                  margin-bottom: 25px;
+                                "
+                              >
+                                <ul style="display: flex">
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star"
+                                    ></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      style="color: #ed212d; font-size: 12px"
+                                      class="fa-solid fa-star-half-stroke"
+                                    ></i>
+                                  </li>
+                                </ul>
+                                <p style="font-weight: 600">
+                                  <span
+                                    style="
+                                      text-decoration: line-through;
+                                      margin-right: 8px;
+                                      font-weight: 400;
+                                    "
+                                    >$30</span
+                                  >
+                                  <span>$28</span>
+                                </p>
+                              </div>
+                              <button
+                                class="p__btn"
+                                style="font-size: 14px; padding: 8px 15px"
+                              >
+                                Add to Cart
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <button class="p__btn" style="margin-top: 50px">
+                              See More
+                            </button>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- ============== Poster Here ============== -->
+
+      <tr>
+        <td><img src="https://i.ibb.co/Rb8yNsW/post.jpg" alt="" /></td>
+      </tr>
+      <!-- ============== Call to Action Here ============== -->
+      <tr>
+        <td
+          style="
+            padding: 80px 20px;
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url('https://i.ibb.co/TgwPYd7/ctabg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+          "
+        >
+          <h1>join over 5 milion customer worldwide</h1>
+          <p style="font-size: 15px; margin-top: 10px">
+            Start for Free -- upgrade anytime
+          </p>
+          <button class="p__btn" style="margin-top: 40px">
+            Get Started <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </td>
+      </tr>
+      <!-- ============== Footer Here ============== -->
+      <tr>
+        <td style="padding: 30px 20px">
+          <table width="100%">
+            <tr>
+              <td
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 15px;
+                  justify-content: center;
+                  margin-bottom: 20px;
+                "
+              >
+                <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+                <a href="#"><i class="fa-brands fa-youtube"></i> </a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i> </a>
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="width: 100%; height: 1px; background-color: #cccccc"
+              ></td>
+            </tr>
+            <tr>
+              <td>
+                <p
+                  style="text-align: center; padding-top: 20px; font-size: 14px"
+                >
+                  <i class="fa-regular fa-copyright"></i>
+                  <span>All Rights Reserved</span>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
